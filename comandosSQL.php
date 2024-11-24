@@ -55,7 +55,7 @@
         // fetch assoc faz com que cada linha seja apresentada como um array com chaves e valores
         while ($linha= $result-> fetch_assoc()){ // loop para percorrer linhas 
             // desmembrando e colocando - (. usado para concatenar)
-            echo  $linha["nome"] . " - " . $linha["email"] . " ";
+            echo  $linha["nome"] . " - " . $linha["email"] . " <br>";
 
         }
     }
