@@ -31,7 +31,7 @@
 
         // enviar a tarefa e tudo ocorreu bem 
         if ($sql -> execute()){
-            echo "Novo registro criado com Sucesso <br>";
+            echo "<br> Novo registro criado com Sucesso <br>";
         } else{
             echo"Erro ao criar registro: " . $sql->error;
         }
@@ -41,7 +41,7 @@
     // se criou o prepare criou o sql só essas duas opçoes acima podem ocorrer, mas caso não tenha criado (↓)
 
     } else {
-        echo "Erro ao preparar o SQL: " . $conn->error;
+        echo "Erro ao preparar o SQL: " . $con->error;
     }
 
 
@@ -55,7 +55,7 @@
         // fetch assoc faz com que cada linha seja apresentada como um array com chaves e valores
         while ($linha= $result-> fetch_assoc()){ // loop para percorrer linhas 
             // desmembrando e colocando - (. usado para concatenar)
-            echo $linha["nome"] . " - " . $linha["email"];
+            echo  $linha["nome"] . " - " . $linha["email"] . " ";
 
         }
     }
